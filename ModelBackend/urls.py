@@ -10,5 +10,4 @@ urlpatterns = [
         views.predictLiver), name="Score Application"),
     path('predictKidney', csrf_exempt(
         views.predictKidney), name="Score Application"),
-
 ]
