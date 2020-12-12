@@ -25,7 +25,7 @@ def predictLiver(request):
     score = liverModel.predict(dataF)
     print(score)
     score = float(score)
-    return JsonResponse({'score':1})
+    return JsonResponse({'score':score})
 
 
 def predictKidney(request):
