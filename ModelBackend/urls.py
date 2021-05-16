@@ -8,6 +8,6 @@ urlpatterns = [
         views.predictHeart), name="Score Application"),
     path('predictLiver', csrf_exempt(
         views.predictLiver), name="Score Application"),
-    path('predictKidney', csrf_exempt(
-        views.predictKidney), name="Score Application"),
+    # path('predictKidney', csrf_exempt(
+    #     views.predictKidney), name="Score Application"),
 ]
