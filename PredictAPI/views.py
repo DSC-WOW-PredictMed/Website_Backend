@@ -19,14 +19,14 @@ def predictHeart(request):
     return JsonResponse({'score': score})
 
 
-def predictLiver(request):
-    data = json.loads(request.body)
-    dataF = pd.DataFrame({'x': data}).transpose()
-    print(dataF)
-    score = liverModel.predict(dataF)
-    print(score)
-    score = float(score)
-    return JsonResponse({'score': score})
+# def predictLiver(request):
+#     data = json.loads(request.body)
+#     dataF = pd.DataFrame({'x': data}).transpose()
+#     print(dataF)
+#     score = liverModel.predict(dataF)
+#     print(score)
+#     score = float(score)
+#     return JsonResponse({'score': score})
 
 
 # def predictKidney(request):
