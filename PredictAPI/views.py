@@ -6,7 +6,7 @@ import pandas as pd
 import joblib
 
 heartModel = joblib.load('heart_model.pkl')
-liverModel = joblib.load('liver_model.pkl')
+# liverModel = joblib.load('liver_model.pkl')
 # kidneyModel = joblib.load('kidney_model.pkl')
 
 
